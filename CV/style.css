@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bg-image {
+    background-image: url("background-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: blur(1.9px);
+    
+}
+
+.profile-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.profile-container img {
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+    opacity: 0.95;
+    transition: all 0.20s;
+}
+
+.profile-container img:hover{
+    opacity: 1;
+    border: 8px solid white;
+}
+
+.profile-text{
+    margin: 4px;
+}
+
+.profile-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.profile-container ul li{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    transition: all 1s;
+}
+
+.profile-container ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.profile-container ul li:hover, .profile-container ul li a:hover{
+    color: chartreuse;
+    border-color:chartreuse;
+    border-radius: 10px;
+}
+
+
+
+
